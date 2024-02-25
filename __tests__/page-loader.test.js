@@ -14,7 +14,7 @@ describe('page-loader', () => {
     test('access data from url', async () => {
         const expectedHtml = '<html><body>Hello World!</body></html>';
         const scope = nock('https://ru.hexlet.io')
-            .get()
+            .get('/')
             .reply(200, expectedHtml);
 
         await pageLoader('https://ru.hexlet.io', tempDir);
