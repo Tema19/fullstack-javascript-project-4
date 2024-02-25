@@ -1,0 +1,48 @@
+{
+  "name": "page-loader",
+  "version": "1.0.0",
+  "description": "Utility which download web pages",
+  "main": "src/page-loader.js",
+  "type": "module",
+  "bin": {
+    "pageLoader": "bin/page-loader.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test2": "nyc mocha"
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tema19/fullstack-javascript-project-4.git"
+  },
+  "author": "Tema19",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tema19/fullstack-javascript-project-4/issues"
+  },
+  "homepage": "https://github.com/Tema19/fullstack-javascript-project-4#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nock": "^13.5.1",
+    "os": "^0.1.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "commander": "^12.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
